@@ -45,10 +45,10 @@ do{
             printf("1-Ajouter un livre au stock.\n");
 
             printf("Donner le titre du livre :\n");
-            scanf("%s",&titre[c]);
+            scanf("%s", titre[c]);
 
             printf("Donner l'auteur du livre : \n");
-            scanf("%s",&auteur[c]);
+            scanf("%s", auteur[c]);
 
 
             printf("Donner le prix du livre :\n");
@@ -59,23 +59,22 @@ do{
             printf("Donner le quantite du livre :\n");
             scanf("%d",&quantite[c]);
             printf("Le livre a ajoute avec succes.\n");
-c++;
+ c++;
 
-            break;
+        break;
         case 2:
+         
             printf("-- Les livres disponibles --\n");
-
 
            for (int i=0;i<c;i++)
 
            printf("titre : %s | auteur : %s | prix : %.2f | quantite : %d\n", titre[i], auteur[i], prix[i], quantite[i]);
-
             break;
         case 3:
              printf("Donner le titre du livre : \n");
-                scanf("%s", &trouvertitre);
+                scanf("%s", trouvertitre);
                 for(int i=0; i<c; i++){
-                    if(strcmp(titre[i], &trouvertitre) == 0){
+                    if(strcmp(titre[i], trouvertitre) == 0){
                             trouver =1;
                            printf("\t--- Votre livre est existant ---\n titre : %s | auteur : %s | prix : %.2f | quantite : %d\n", titre[i], auteur[i], prix[i], quantite[i]);
 
@@ -89,14 +88,14 @@ c++;
                       break;
         case 4:
             printf("Donner le titre du livre a modifier : \n");
-                scanf("%s", &trouvertitre);
+                scanf("%s", trouvertitre);
                 for(int i=0; i<c; i++){
-                    if(strcmp(titre[i], &trouvertitre) == 0)
+                    if(strcmp(titre[i], trouvertitre) == 0)
                         {
                         printf("Donner la nouvelle quantite : \n");
                         scanf("%d", &nvquantite);
                         quantite[i] = nvquantite;
-                        printf("---- La nouvelle quantite du %s est %d : ----\n",&trouvertitre,quantite[i]);
+                        printf("---- La nouvelle quantite du %s est %d : ----\n",trouvertitre,quantite[i]);
                         trouver = 1;
                         break;
                         }
@@ -111,7 +110,7 @@ c++;
         case 5:
             printf("--Supprimer un livre du stock--\n");
          printf("Donner le titre du livre a supprimer  : \n");
-                scanf("%s", &trouvertitre);
+                scanf("%s", trouvertitre);
                 for(int i=0; i<c; i++){
                     if(strcmp(titre[i], trouvertitre) == 0)
                         {
