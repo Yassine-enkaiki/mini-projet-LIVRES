@@ -1,7 +1,7 @@
 # Mini Projet - Gestion de Bibliothèque 📚
      
-
-       |           **Contexte  du  mini  projet**               |
+                    **Contexte  du  mini  projet**       
+     
        |               :----------------------:                 |
        | 1-Ajouter un livre au stock.                           |
        | 2-Afficher tous les livres disponibles.                | 
