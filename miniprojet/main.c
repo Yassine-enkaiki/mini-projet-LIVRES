@@ -118,6 +118,10 @@ c++;
                         for(int j=i; j<c; j++)
                         {
                             strcpy(titre[j],titre[j+1]);
+                            strcpy(titre[j],titre[j+1]);
+                            strcpy(auteur[j],auteur[j+1]);
+                            prix[j]=prix[j+1];
+                            quantite[j]=quantite[j+1];
                         }
                         trouver = 1;
                         c--;
